@@ -1,20 +1,63 @@
 <!DOCTYPE html>
 
 <html>
-  <head> </head>
+  <head>
+    <style>
+      body {
+        background-color: lightgrey;
+      }
+
+      .container {
+        border: solid;
+        border-color: red;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 80%;
+      }
+
+      #title {
+        border: solid;
+      }
+
+      #img-div {
+        border: solid;
+        text-align: center;
+      }
+
+      #image {
+        max-width: 100%;
+        height: auto;
+      }
+
+      #img-caption {
+        border: solid;
+      }
+
+      #tribute-info {
+        border: solid;
+      }
+    </style>
+  </head>
   <body id="main">
-    <h1 id="title">John Higgins - The Wizard of Wishaw</h1>
-    <div id="img-div">
-      <img
-        id="image"
-        src="https://i.pinimg.com/originals/85/14/27/851427da304f30b0cb02f6e1a62ce6de.jpg"
-        alt="John Higgins after winning a Snooker World Championships"
-      />
-      <p id="img-caption">
-        John Higgins, one of the best Snooker players of all time, after winning one of his four
-        World Championships.
-      </p>
+    <div class="container">
+      <h1 id="title">John Higgins - The Wizard of Wishaw</h1>
+      <div id="img-div">
+        <img
+          id="image"
+          src="https://i.pinimg.com/originals/85/14/27/851427da304f30b0cb02f6e1a62ce6de.jpg"
+          alt="John Higgins after winning a Snooker World Championships"
+        />
+        <p id="img-caption">
+          John Higgins, one of the best Snooker players of all time, after winning one of his four
+          World Championships.
+        </p>
+      </div>
+      <div id="tribute-info">
+        <p>
+          If you want to learn more about John Higgins you can visit his
+          <a href="https://en.wikipedia.org/wiki/John_Higgins" target="_blank">Wikipedia page</a>.
+        </p>
+      </div>
     </div>
-    <div id="tribute-info"></div>
   </body>
 </html>
