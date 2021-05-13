@@ -8,7 +8,6 @@
       }
 
       article {
-        border: solid;
         display: grid;
         justify-content: center;
       }
@@ -17,10 +16,19 @@
         border: solid;
         border-color: grey;
         border-radius: 25px;
-        border-width: 2px;
+        border-width: 1px;
         margin: 20px;
         padding-left: 15px;
-        width: 80%;
+        padding-right: 15px;
+        background-color: white;
+      }
+
+      section:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+
+      li {
+        margin: 4px;
       }
 
       h2 {
@@ -28,11 +36,11 @@
       }
 
       .container {
-        background-color: lightgrey;
+        background-color: rgb(238, 236, 236);
         border-radius: 10px;
-        justify-content: center;
         display: grid;
         grid-template-columns: 80%;
+        justify-content: center;
       }
 
       .year {
@@ -40,22 +48,30 @@
       }
 
       #title {
+        text-align: center;
       }
 
       #img-div {
         background-color: white;
         text-align: center;
+        border-radius: 25px;
       }
 
       #image {
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
+        padding: 20px;
+        border-radius: 35px;
       }
 
       #img-caption {
+        font-size: 14px;
       }
 
       #tribute-info {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 60%;
       }
     </style>
   </head>
@@ -84,7 +100,7 @@
                 <span class="year">1995</span>: Winning 3 ranking titles, the Grand Prix, the
                 British Open, and the International Open
               </li>
-              <li><span year="year">1996</span>: Becoming number 2 in the world of snooker.</li>
+              <li><span class="year">1996</span>: Becoming number 2 in the world of snooker.</li>
               <li>
                 <span class="year">1998</span>: World Champion at 23 years old and becoming number 1
                 of the world.
